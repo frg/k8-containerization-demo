@@ -12,7 +12,7 @@ You have an application and it needs to be setup in a way where it's able to be 
 dotnet new webapi -o app1
 ```
 
-This command uses a native dotnet template `webapi` to create a web API project that generates fake weather data.
+This command uses a native dotnet template `webapi` to create a web API project that generates fake weather data. Note that in this GIT repository the file named "Dockerfile" is not part of the web API project just generated.
 
 To run the application change directory `cd apps/app1`, then execute `dotnet run` to build and launch the application. Using the port noted in the console logs you can append `/swagger`, and the Swagger documentation will be loaded.
 
