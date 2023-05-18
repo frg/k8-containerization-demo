@@ -62,8 +62,10 @@ Next we generate our Docker image. The Docker image will be registered in Docker
 
 ```bash
 # apps/app1/
-docker build --tag app1 .
+docker build --no-cache --tag app1 .
 ```
+
+--no-cache flag will make your `docker image ls` command to list the image as recently built instead of using an old version which would not consider your latest changes.
 
 To test our new Docker image we can start a container using the image we just created.
 
