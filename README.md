@@ -16,6 +16,9 @@ This command uses a native dotnet template `webapi` to create a web API project 
 
 To run the application change directory `cd apps/app1`, then execute `dotnet run` to build and launch the application. Using the port noted in the console logs you can append `/swagger`, and the Swagger documentation will be loaded.
 
+Note that if by running the application you get an error from Microsoft.AspNetCore.HttpsPolicy.RedirectionMiddleware is due to developer certificates not trusted. To fix it you need to open Properties/launchSettings.json file with any text editor and leave only the profile called "https". Then retry `dotnet run` to get 'developer certificate not trusted error'. After that execute `dotnet dev-certs https --clean` and 
+`dotnet dev-certs https --trust` - accepting the new certificate. Finally restart your computer and try `dotnet run` again.
+
 ## Containerization
 Containerization is the act of creating portable, isolated, and reproducible environments for applications. Docker is the most popular tool to do this, however there's also other tools like Containerd. For the purpose of this demo we will use Docker throughout.
 
