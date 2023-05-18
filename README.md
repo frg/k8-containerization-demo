@@ -64,6 +64,11 @@ Next we generate our Docker image. The Docker image will be registered in Docker
 # apps/app1/
 docker build --tag app1 .
 ```
+note that the following command should now include your image in the list, otherwise check the logs for the previous build command:
+```bash
+# apps/app1/
+docker image ls
+```
 
 To test our new Docker image we can start a container using the image we just created.
 
