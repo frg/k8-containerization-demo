@@ -94,6 +94,8 @@ docker tag app1 <your-docker-hub-id>/app1:v1
 docker push <your-docker-hub-id>/app1:v1
 ```
 
+You can create your own on hub.docker.com with a new account on a free plan and would need to run `docker login` successfully before running the previous commands. A new repository on your Docker Hub account will be created after success.
+
 ## Kubernetes
 
 Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications -- we call these tools Orchestrators.
