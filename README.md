@@ -189,6 +189,7 @@ app1         LoadBalancer   10.101.183.235   localhost     5000:31785/TCP   1m
 ```
 
 In this example we use the value of the external IP column as the host and the first port specified in the port column.
+Note that `kubectl get services` command can also show one service named by default convention as `kubernetes` of type `ClusterIP` with no external IP. The Kubernetes API server is a central component of a Kubernetes cluster. It exposes the Kubernetes API, which allows you to interact with and manage the cluster. It provides functionality for creating, updating, and deleting Kubernetes resources, such as pods, deployments, services, and more. If you have enabled Kubernetes integration in Docker Desktop, the "kubernetes" service you see is most likely associated with the local Kubernetes cluster managed by Docker Desktop.
 
 ```
 http://localhost:5000/WeatherForecast
