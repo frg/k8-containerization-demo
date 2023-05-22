@@ -246,6 +246,8 @@ Windows/PowerShell
 
 Using the username `admin` and the password retreived from either commands, we're now able to login to ArgoCD.
 
+Now using `kubectl get svc -n argocd argocd-server` you will see argocd-server and using external IP and port values in a browser you will be able to login.
+
 ### Configuring the application for ArgoCD
 
 We're now ready to configure ArgoCD to manage the deployment of our application when our Kubernetes manifests for our application change.
