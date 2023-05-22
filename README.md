@@ -277,7 +277,6 @@ spec:
 At this point we're ready to apply these changes. ArgoCD will attempt to pick up changes from the specified repository in the `application.yaml`. This means it's time to commit and push our code to that repository.
 
 ```bash
-# kubernetes/apps/app1/
 kubectl apply -f application.yaml
 ```
 
